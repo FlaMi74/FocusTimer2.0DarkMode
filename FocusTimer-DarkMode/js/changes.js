@@ -1,3 +1,4 @@
+
 export default function Changes({btnlight, btndark, bodyClass}) {
 
     function lightMode() {
@@ -5,8 +6,6 @@ export default function Changes({btnlight, btndark, bodyClass}) {
         bodyClass.classList.remove('light')
         btnlight.classList.add('hide')
         btndark.classList.remove('hide')
-        
-        console.log(btnlight, bodyClass)
     }
 
     function darkMode() {

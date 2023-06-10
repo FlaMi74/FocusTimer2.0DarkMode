@@ -110,6 +110,14 @@ main {
     border-radius: 2.4rem;
 }
 
+#cards input {
+    margin-top: 3.2rem;
+    align-items: center;
+    color: var(--fontColorClick);
+    width: 9rem;
+    height: 1.6rem;
+}
+
 #cards .hide {
     background: var(--bgColorClick);
     border-radius: 2.4rem;

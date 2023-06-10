@@ -3,17 +3,20 @@ import {
     seconds, secondsDisplay,
     btnPlay, btnStop, btnPause,
     btnPlus, btnMinus, bodyClass,
-    btnForest, btnRain, btnlight,
-    btnCoffee, btnFire, btndark } from "./elements.js"
+    btnForest, btnRain, btnlight, 
+    btnCoffee, btnFire, btndark, forestControl,
+    rainControl, coffeeControl,
+    fireControl} from "./elements.js"
 
 import Timer from "./timer.js"
 import Sounds from "./sounds.js"
 import Changes from "./changes.js"
 
-const sounds = Sounds({ btnCoffee, btnFire, btnForest, btnRain})
+const sounds = Sounds({btnCoffee, btnFire, btnForest, btnRain, forestControl, forestControl,
+    rainControl, coffeeControl, fireControl})
 
 const timer = Timer({ minutesDisplay, secondsDisplay, minutes, seconds, 
-                      btnPlay, btnPause })
+                      btnPlay, btnPause})
 
 const changes = Changes({btnlight, btndark, bodyClass})
 
@@ -43,3 +46,6 @@ btnFire.addEventListener('click', sounds.fireSound)
 btnlight.addEventListener('click', changes.lightMode)
 
 btndark.addEventListener('click', changes.darkMode)
+
+
+

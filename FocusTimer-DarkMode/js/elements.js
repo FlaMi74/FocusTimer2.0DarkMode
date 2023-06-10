@@ -12,6 +12,11 @@ const btnFire = document.querySelector(".fire")
 const btnlight = document.querySelector("body .styleMode .light")
 const btndark = document.querySelector("body .styleMode .dark")
 const bodyClass = document.querySelector("body")
+const forestControl = document.querySelector(".forest input")
+const rainControl = document.querySelector(".rain input")
+const coffeeControl = document.querySelector(".coffee input")
+const fireControl = document.querySelector(".fire input")
+
 let minutes
 let seconds
 
@@ -23,5 +28,7 @@ export  {
     btnForest, btnRain,
     btnCoffee, btnFire,
     btnlight, btndark,
-    bodyClass
+    bodyClass, forestControl,
+    rainControl, coffeeControl,
+    fireControl
 }
